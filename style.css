@@ -1,0 +1,15 @@
+#titlebanner {
+    display:flex;
+justify-content:center;
+    text-align: center;
+    border: black;
+    font-family: Arial;
+    color: white;
+    height: 40px;
+    width: 500px;
+    background: linear-gradient(to right, pink , blue);
+    font-size: 30px;
+}
+#button1, #button2 {
+
+}

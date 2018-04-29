@@ -1,0 +1,34 @@
+html
+    h1 Welcome to Kenziegram 2.0!
+        form(
+            action="http://localhost:3000/upload" 
+            method="post" 
+            enctype="multipart/form-data"
+        )
+            div
+                label( 
+                for="file"
+                name= Choose a File
+                )
+                
+                input( y
+                    type="file" 
+                    id="file" 
+                    name="myFile"
+                )
+                
+                
+                button(
+                type= 'send the file'
+                style= 'width= 20px; height: 10px'
+                ) upload 
+
+      
+
+        for image in images
+            img(
+            src=`/uploads/${image}`
+            width="300px"
+            height="300px"
+        )
+            
