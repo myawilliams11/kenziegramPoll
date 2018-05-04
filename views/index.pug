@@ -1,29 +1,27 @@
 html
-    h1 Welcome to Kenziegram 2.0!
+    h1 KenzieGram
         form(
-            action="http://localhost:3000/upload" 
+            action="/upload" 
             method="post" 
             enctype="multipart/form-data"
         )
+
             div
                 label( 
                 for="file"
                 name= Choose a File
                 )
                 
-                input( y
+                input( 
                     type="file" 
                     id="file" 
                     name="myFile"
                 )
-                
-                
+                               
                 button(
                 type= 'send the file'
                 style= 'width= 20px; height: 10px'
-                ) upload 
-
-      
+                ) upload
 
         for image in images
             img(
@@ -31,4 +29,5 @@ html
             width="300px"
             height="300px"
         )
-            
+    div(id="place")
+    script(src="time.js")       
